@@ -1,3 +1,7 @@
+/**
+ * @author xxzkid
+ * @date 2016/02/01
+ */
 ;(function($){
     
     var defaults = {
@@ -52,7 +56,7 @@
                     if (json.body.list.length > 0) {
                         // 如果页面有#bb-nocontent 则移除
                         if ( $('#bb-nocontent') ) {
-                        	$('#bb-nocontent').remove();
+                            $('#bb-nocontent').remove();
                         }
                         var html = buildHtml(json);
                         $obj.append(html);
