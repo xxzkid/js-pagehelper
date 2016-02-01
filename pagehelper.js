@@ -51,9 +51,9 @@
                     page.pageNum = json.body.pageNum;
                     if (json.body.list.length > 0) {
                         // 如果页面有#bb-nocontent 则移除
-						if ( $('#bb-nocontent') ) {
-							$('#bb-nocontent').remove();
-						}
+			if ( $('#bb-nocontent') ) {
+				$('#bb-nocontent').remove();
+			}
                         var html = buildHtml(json);
                         $obj.append(html);
                     } else {
